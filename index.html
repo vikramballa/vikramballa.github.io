@@ -9,11 +9,12 @@
   <meta property="og:title" content="Vikram Balla — AI/ML Engineer">
   <meta property="og:description" content="Local-first AI systems across NLP, speech, LLMs and security.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://vikramballa.github.io/assets/vikram.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script>
     // Apply the saved theme before first paint to avoid a flash
     try {
@@ -24,6 +25,7 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
   <header class="nav" id="top">
     <div class="wrap nav__inner">
@@ -32,6 +34,7 @@
         <span class="brand__name">Vikram Balla</span>
       </a>
       <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -53,19 +56,33 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="hero wrap">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--a"></span>
+        <span class="blob blob--b"></span>
+        <span class="hero__grid"></span>
+      </div>
+      <div class="wrap hero__inner">
       <div class="hero__text">
-        <p class="eyebrow"><span class="dot"></span> AI/ML Engineer · GlobalSOC.ai</p>
-        <h1>Balla Doondi<br>Surya Vikram</h1>
-        <p class="lede">
-          I build AI systems that run locally, explain their decisions and hold up outside a notebook,
-          from speech assistants and real-time translation to LLM-powered security and insurance platforms.
+        <p class="eyebrow load" style="--d:0"><span class="dot"></span> AI/ML Engineer · GlobalSOC.ai</p>
+        <h1 class="hero__name">
+          <span class="line"><span style="--d:1">Balla Doondi</span></span>
+          <span class="line"><span style="--d:2">Surya Vikram</span></span>
+        </h1>
+        <p class="hero__build load" style="--d:3">
+          Engineering
+          <span class="sr-only">agentic AI systems, multi-agent LLM workflows, intelligent automation platforms, retrieval-augmented generation, real-time speech AI and production ML systems.</span>
+          <span class="rotator-line" aria-hidden="true"><span class="rotator" id="rotator">agentic AI systems</span><span class="caret"></span></span>
         </p>
-        <div class="cta">
-          <a class="btn" href="#projects">View projects</a>
+        <p class="lede load" style="--d:4">
+          Machine learning engineer specializing in NLP, speech and large language models.
+          I take models from research to production and build AI that runs locally and explains its decisions.
+        </p>
+        <div class="cta load" style="--d:5">
+          <a class="btn" href="#projects">View projects <span class="btn__arrow" aria-hidden="true">→</span></a>
           <a class="btn btn--ghost" href="mailto:vikramballa184@gmail.com">Get in touch</a>
         </div>
-        <ul class="socials" aria-label="Profiles">
+        <ul class="socials load" style="--d:6" aria-label="Profiles">
           <li><a href="https://github.com/vikramballa" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
             GitHub</a></li>
@@ -79,31 +96,83 @@
         </ul>
       </div>
 
-      <aside class="terminal" aria-label="Quick facts">
-        <div class="terminal__bar"><span></span><span></span><span></span><em>whoami</em></div>
-        <dl class="terminal__body">
-          <div><dt>role</dt><dd>AI/ML Engineer @ GlobalSOC.ai</dd></div>
-          <div><dt>focus</dt><dd>LLMs · NLP · Speech · Security AI</dd></div>
-          <div><dt>stack</dt><dd>Python · PyTorch · FastAPI · Ollama</dd></div>
-          <div><dt>degree</dt><dd>B.Tech CSE (AI &amp; ML), KARE '26</dd></div>
-          <div><dt>cgpa</dt><dd>8.44 / 10</dd></div>
-          <div><dt>speaks</dt><dd>English · Hindi · Telugu</dd></div>
-        </dl>
-      </aside>
+      <figure class="portrait">
+        <div class="portrait__frame">
+          <img src="assets/vikram.jpg" alt="Portrait of Balla Doondi Surya Vikram" width="880" height="1073" fetchpriority="high">
+        </div>
+      </figure>
+      </div>
     </section>
 
     <!-- STATS -->
     <section class="wrap stats reveal" aria-label="Highlights">
-      <div><strong>0.9 s</strong><span>voice command to action, fully on-device</span></div>
-      <div><strong>3</strong><span>language pairs in real-time speech translation</span></div>
-      <div><strong>87%</strong><span>NER accuracy on FIR crime reports</span></div>
-      <div><strong>3</strong><span>production platforms at GlobalSOC.ai</span></div>
+      <div>
+        <strong data-count="11">11</strong>
+        <p class="stat__label">AI projects built</p>
+        <p class="stat__note">NLP, speech, vision and LLM systems</p>
+      </div>
+      <div>
+        <strong data-count="3">3</strong>
+        <p class="stat__label">Enterprise products</p>
+        <p class="stat__note">AI features shipped at GlobalSOC.ai</p>
+      </div>
+      <div>
+        <strong data-count="8.44" data-decimals="2">8.44</strong>
+        <p class="stat__label">CGPA</p>
+        <p class="stat__note">B.Tech CSE (AI &amp; ML), KARE</p>
+      </div>
+      <div>
+        <strong>Top 5</strong>
+        <p class="stat__label">Hackathon finish</p>
+        <p class="stat__note">AI-based traffic safety system</p>
+      </div>
+    </section>
+
+    <!-- TECH MARQUEE -->
+    <div class="marquee" aria-label="Technologies I work with">
+      <ul class="marquee__track">
+        <li>Python</li><li>PyTorch</li><li>TensorFlow</li><li>Transformers</li><li>scikit-learn</li><li>FastAPI</li>
+        <li>Ollama</li><li>Whisper</li><li>Apple MLX</li><li>FAISS</li><li>LiveKit</li><li>PostgreSQL</li>
+        <li>Docker</li><li>React</li><li>OpenCV</li><li>YOLO</li><li>spaCy</li><li>XGBoost</li>
+      </ul>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section wrap about" id="about">
+      <div class="about__text reveal">
+        <p class="kicker">01 · About</p>
+        <h2>Practical AI, built to ship.</h2>
+        <p>
+          I'm an AI/ML engineer specializing in deep learning, NLP and LLMs. I studied Computer Science (AI &amp; ML)
+          at Kalasalingam Academy of Research and Education, and today I build the AI behind GlobalSOC.ai's
+          security, insurance and sales products.
+        </p>
+        <p>
+          I care about systems people can trust: models that run on your own hardware, scores that explain
+          themselves, and safety checks that hold even when the LLM misbehaves.
+        </p>
+      </div>
+
+      <aside class="terminal reveal" aria-label="Quick facts">
+        <div class="terminal__bar"><span></span><span></span><span></span><em>~/vikram</em></div>
+        <div class="terminal__body">
+          <p class="terminal__prompt"><span class="terminal__ps">$</span> <span class="terminal__cmd">whoami</span><span class="terminal__cursor"></span></p>
+          <dl>
+            <div style="--i:0"><dt>role</dt><dd>AI/ML Engineer @ GlobalSOC.ai</dd></div>
+            <div style="--i:1"><dt>focus</dt><dd>LLMs · NLP · Speech · Security AI</dd></div>
+            <div style="--i:2"><dt>stack</dt><dd>Python · PyTorch · FastAPI · Ollama</dd></div>
+            <div style="--i:3"><dt>degree</dt><dd>B.Tech CSE (AI &amp; ML), KARE '26</dd></div>
+            <div style="--i:4"><dt>cgpa</dt><dd>8.44 / 10</dd></div>
+            <div style="--i:5"><dt>speaks</dt><dd>English · Hindi · Telugu</dd></div>
+          </dl>
+        </div>
+      </aside>
     </section>
 
     <!-- EXPERIENCE -->
     <section class="section wrap" id="experience">
       <header class="section__head reveal">
-        <p class="kicker">01 · Experience</p>
+        <p class="kicker">02 · Experience</p>
         <h2>Where I work</h2>
       </header>
 
@@ -155,7 +224,7 @@
     <!-- PROJECTS -->
     <section class="section wrap" id="projects">
       <header class="section__head reveal">
-        <p class="kicker">02 · Projects</p>
+        <p class="kicker">03 · Projects</p>
         <h2>Selected work</h2>
         <p class="section__sub">Most of these run entirely on local, open-source models, with no paid APIs.</p>
       </header>
@@ -371,7 +440,7 @@
     <!-- SKILLS -->
     <section class="section wrap" id="skills">
       <header class="section__head reveal">
-        <p class="kicker">03 · Skills</p>
+        <p class="kicker">04 · Skills</p>
         <h2>Toolkit</h2>
       </header>
       <div class="skills reveal">
@@ -389,7 +458,7 @@
     <!-- EDUCATION + ACHIEVEMENTS -->
     <section class="section wrap" id="education">
       <header class="section__head reveal">
-        <p class="kicker">04 · Education</p>
+        <p class="kicker">05 · Education</p>
         <h2>Background</h2>
       </header>
       <div class="edu reveal">
@@ -413,7 +482,7 @@
 
     <!-- CONTACT -->
     <section class="section wrap contact reveal" id="contact">
-      <p class="kicker">05 · Contact</p>
+      <p class="kicker">06 · Contact</p>
       <h2>Let's build something useful.</h2>
       <p class="section__sub">I'm open to AI/ML engineering roles, collaborations and interesting problems in NLP, speech and applied LLMs.</p>
       <div class="cta">
@@ -430,6 +499,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
