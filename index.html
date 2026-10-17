@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vikram Balla — AI/ML Engineer</title>
+  <meta name="description" content="Balla Doondi Surya Vikram — AI/ML Engineer at GlobalSOC.ai. I build local-first AI systems across NLP, speech, LLMs and security.">
+  <meta name="author" content="Balla Doondi Surya Vikram">
+  <meta property="og:title" content="Vikram Balla — AI/ML Engineer">
+  <meta property="og:description" content="Local-first AI systems across NLP, speech, LLMs and security.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__mark">V</span>
+        <span class="brand__name">Vikram Balla</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn--sm" href="assets/Vikram_Balla_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        <button class="icon-btn nav__menu" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero__text">
+        <p class="eyebrow"><span class="dot"></span> AI/ML Engineer · GlobalSOC.ai</p>
+        <h1>Balla Doondi<br>Surya Vikram</h1>
+        <p class="lede">
+          I build AI systems that run locally, explain their decisions and hold up outside a notebook,
+          from speech assistants and real-time translation to LLM-powered security and insurance platforms.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="mailto:vikramballa184@gmail.com">Get in touch</a>
+        </div>
+        <ul class="socials" aria-label="Profiles">
+          <li><a href="https://github.com/vikramballa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+            GitHub</a></li>
+          <!-- TODO: replace with your full LinkedIn profile URL -->
+          <li><a href="https://www.linkedin.com/in/vikramballa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+            LinkedIn</a></li>
+          <li><a href="mailto:vikramballa184@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none"/><path d="M3 6.5l9 6 9-6M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            Email</a></li>
+        </ul>
+      </div>
+
+      <aside class="terminal" aria-label="Quick facts">
+        <div class="terminal__bar"><span></span><span></span><span></span><em>whoami</em></div>
+        <dl class="terminal__body">
+          <div><dt>role</dt><dd>AI/ML Engineer @ GlobalSOC.ai</dd></div>
+          <div><dt>focus</dt><dd>LLMs · NLP · Speech · Security AI</dd></div>
+          <div><dt>stack</dt><dd>Python · PyTorch · FastAPI · Ollama</dd></div>
+          <div><dt>degree</dt><dd>B.Tech CSE (AI &amp; ML), KARE '26</dd></div>
+          <div><dt>cgpa</dt><dd>8.44 / 10</dd></div>
+          <div><dt>speaks</dt><dd>English · Hindi · Telugu</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- STATS -->
+    <section class="wrap stats reveal" aria-label="Highlights">
+      <div><strong>0.9 s</strong><span>voice command to action, fully on-device</span></div>
+      <div><strong>3</strong><span>language pairs in real-time speech translation</span></div>
+      <div><strong>87%</strong><span>NER accuracy on FIR crime reports</span></div>
+      <div><strong>3</strong><span>production platforms at GlobalSOC.ai</span></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section wrap" id="experience">
+      <header class="section__head reveal">
+        <p class="kicker">01 · Experience</p>
+        <h2>Where I work</h2>
+      </header>
+
+      <article class="job reveal">
+        <div class="job__meta">
+          <h3>AI/ML Engineer</h3>
+          <p class="job__org">GlobalSOC.ai</p>
+          <!-- TODO: add your start month/year, e.g. "Nov 2025 — Present" -->
+          <p class="job__date">Present</p>
+        </div>
+        <div class="job__body">
+          <p>
+            Designing and shipping the AI layer of GlobalSOC's product suite: machine-learning risk models,
+            multi-agent LLM pipelines and AI features inside multi-tenant SaaS platforms.
+          </p>
+
+          <div class="product">
+            <h4>CyberInsure <span>Cyber-insurance infrastructure platform</span></h4>
+            <ul>
+              <li>Worked on a multi-tenant SaaS platform that connects insureds, brokers, carriers and MSPs for cyber-risk assessment and policy lifecycle management.</li>
+              <li>Built ML-driven risk scoring with explainable outputs (XGBoost + SHAP) on a Python/FastAPI microservice, feeding CIS v8 control assessments and carrier-fit analysis.</li>
+              <li>Data isolated per tenant with PostgreSQL row-level security; stack spans Next.js, Fastify, Neo4j, Redis and Docker.</li>
+            </ul>
+          </div>
+
+          <div class="product">
+            <h4>Sales Engine <span>AI sales-lifecycle automation</span></h4>
+            <ul>
+              <li>Built a four-stage agent pipeline: lead discovery, financial-health scoring, contact profiling and personalized outreach with voice qualification calls, handing warm leads to human reps.</li>
+              <li>Rule-first design: all scores are deterministic and source-traceable; LLMs only draft outreach and sit behind a multi-provider fallback, so the pipeline still runs with no model available.</li>
+            </ul>
+          </div>
+
+          <div class="product">
+            <h4>AlphaCRM <span>AI-assisted CRM</span></h4>
+            <ul>
+              <li>Developed a multi-tenant FastAPI CRM covering contacts, leads, opportunities, projects, and GST-compliant proposals and invoices.</li>
+              <li>Added a hybrid AI layer for deal-health scoring, next-best-action suggestions and automated executive briefings.</li>
+            </ul>
+          </div>
+
+          <ul class="tags" aria-label="Technologies">
+            <li>Python</li><li>FastAPI</li><li>XGBoost</li><li>SHAP</li><li>LLM agents</li><li>PostgreSQL</li><li>Next.js</li><li>Docker</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section wrap" id="projects">
+      <header class="section__head reveal">
+        <p class="kicker">02 · Projects</p>
+        <h2>Selected work</h2>
+        <p class="section__sub">Most of these run entirely on local, open-source models, with no paid APIs.</p>
+      </header>
+
+      <div class="projects">
+
+        <!-- SentinelX -->
+        <article class="card card--feature reveal">
+          <div class="card__top">
+            <span class="card__idx">01</span>
+            <span class="card__cat">Security · Applied AI</span>
+          </div>
+          <h3>SentinelX: Open-source SOC platform</h3>
+          <p class="card__lede">
+            Security operations for teams without a 24/7 SOC. SentinelX turns thousands of raw security events
+            into a handful of explainable incidents, each with a risk score you can defend.
+          </p>
+          <ol class="flow" aria-label="Pipeline">
+            <li>Wazuh · Suricata · Zeek</li><li>Normalize</li><li>Sigma + ML</li><li>Correlate</li><li>ATT&amp;CK + risk</li><li>AI analyst</li>
+          </ol>
+          <div class="card__cols">
+            <ul class="points">
+              <li>Ingests endpoint and network telemetry into one event model; detects with Sigma rules and an Isolation Forest behavioral baseline with feature-level explanations.</li>
+              <li>Correlates alerts that share a host, user, IP, domain or hash into incidents mapped to MITRE ATT&amp;CK, scored 0–100 from named, capped risk factors.</li>
+            </ul>
+            <ul class="points">
+              <li>Evidence-grounded AI analyst on local Ollama models: every claim must cite a real event, and invented indicators or prompt injection hidden in logs fail validation.</li>
+              <li>Multi-tenant with PostgreSQL row-level security, append-only audit log and 65+ backend tests.</li>
+            </ul>
+          </div>
+          <ul class="tags">
+            <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>React 19</li><li>scikit-learn</li><li>Ollama</li><li>Sigma</li><li>MITRE ATT&amp;CK</li><li>Docker</li>
+          </ul>
+        </article>
+
+        <!-- Laya -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__idx">02</span>
+            <span class="card__cat">Speech · On-device AI</span>
+          </div>
+          <h3>Laya: Voice assistant for macOS</h3>
+          <p class="card__lede">
+            Say "Hey Laya, open Chrome and search YouTube for neural networks" and it happens about 0.9 s after you stop talking. Everything runs locally and costs nothing to use.
+          </p>
+          <ol class="flow">
+            <li>Silero VAD</li><li>Whisper</li><li>Laya intent model</li><li>Qwen3-4B (MLX)</li><li>Act</li>
+          </ol>
+          <ul class="points">
+            <li>Fine-tuned the intent model on Apple MPS with temperature calibration, so its confidence matches real accuracy. Unsure requests escalate to an on-device LLM planner.</li>
+            <li>Speaker verification ("only my voice"), conversation mode, and Mail, Messages and Calendar tasks that always ask for confirmation before sending.</li>
+            <li>Learns from its own logs; evaluated on 111 pipeline commands and 51 spoken commands across 3 accents.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>PyTorch</li><li>Whisper</li><li>Apple MLX</li><li>Qwen3</li><li>macOS AX</li></ul>
+        </article>
+
+        <!-- Live translator -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__idx">03</span>
+            <span class="card__cat">Speech · Machine translation</span>
+          </div>
+          <h3>Live Translator</h3>
+          <p class="card__lede">
+            Two people on a web call, each speaking their own language: Telugu ↔ English, Hindi ↔ Telugu and Telugu ↔ Mandarin.
+            Each hears the other in their own language, with live captions. Self-hosted, with no paid APIs.
+          </p>
+          <ol class="flow">
+            <li>VAD</li><li>ASR</li><li>Clean-up</li><li>IndicTrans2</li><li>Repair</li><li>TTS</li>
+          </ol>
+          <ul class="points">
+            <li>Streaming agent over LiveKit: endpointing, punctuation, number normalization, translation with automatic checks and retry, then speech synthesis (Piper, Kokoro).</li>
+            <li>"Key-fact" chips surface prices, quantities and phone numbers so the details that matter can't get lost in translation.</li>
+            <li>Benchmarked on p50/p95 latency and accuracy over 72 recorded calls. No audio or transcripts are stored.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>LiveKit</li><li>IndicTrans2</li><li>Whisper</li><li>ONNX Runtime</li><li>CTranslate2</li><li>React 19</li><li>Bun</li></ul>
+        </article>
+
+        <!-- Capstone -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__idx">04</span>
+            <span class="card__cat">NLP · RAG · Capstone</span>
+          </div>
+          <h3>FIR Analysis &amp; Crime Pattern Detection</h3>
+          <p class="card__lede">
+            Final-year capstone. An AI system that reads unstructured First Information Reports, classifies the crime,
+            extracts entities, retrieves the applicable IPC/CrPC/BNS sections, summarizes the case and maps crime hotspots.
+          </p>
+          <dl class="metrics">
+            <div><dt>79.5%</dt><dd>classification accuracy</dd></div>
+            <div><dt>0.87</dt><dd>ROC-AUC</dd></div>
+            <div><dt>85.1%</dt><dd>legal retrieval recall</dd></div>
+            <div><dt>87.2%</dt><dd>NER accuracy</dd></div>
+          </dl>
+          <ul class="points">
+            <li>MiniLM-L6-v2 embeddings with FAISS vector search for retrieval over legal sections; Mistral via Ollama for summaries and contextual reasoning.</li>
+            <li>Structured results stored in PostgreSQL for review and feedback. Built in a team of four, April 2026.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>MiniLM</li><li>FAISS</li><li>Mistral</li><li>Ollama</li><li>FastAPI</li><li>React</li><li>PostgreSQL</li></ul>
+        </article>
+
+        <!-- Vision Aid -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__idx">05</span>
+            <span class="card__cat">Accessibility · KARE × Purdue</span>
+          </div>
+          <h3>Vision Aid (formerly Magnifier)</h3>
+          <p class="card__lede">
+            An assistive tool for visually impaired users, built by a joint team of students from Kalasalingam University and Purdue University.
+            It reads text from documents aloud and adapts the display for low vision and color blindness.
+          </p>
+          <ol class="flow">
+            <li>Upload PDF</li><li>Render pages</li><li>Tesseract OCR</li><li>Review text</li><li>Text-to-speech</li>
+          </ol>
+          <ul class="points">
+            <li>Renders each PDF page as an image with PyMuPDF and Pillow, then extracts the text with Tesseract OCR, so scanned documents work too.</li>
+            <li>Converts the text to speech in English, Spanish, French, German or Hindi with gTTS, for playback in the app or download.</li>
+            <li>16 display filters, including high-contrast pairs (yellow on blue, yellow on black) and protanopia, deuteranopia and tritanopia modes. Built by a cross-university team of five.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>Streamlit</li><li>PyMuPDF</li><li>Pillow</li><li>Tesseract OCR</li><li>gTTS</li></ul>
+        </article>
+
+        <!-- MindLoop -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__idx">06</span>
+            <span class="card__cat">Health · Responsible AI</span>
+          </div>
+          <h3>MindLoop: Wellbeing companion</h3>
+          <p class="card__lede">
+            A privacy-first, culturally adaptive companion for students and early-career professionals in India:
+            check in, get one small evidence-informed action, and learn which actions actually help.
+          </p>
+          <ol class="flow">
+            <li>Check in</li><li>Safety layer</li><li>Pick action</li><li>Did it help?</li><li>Patterns</li>
+          </ol>
+          <ul class="points">
+            <li>A deterministic safety classifier runs before any model call. High-risk messages get reviewed templates and verified human resources, never generated text.</li>
+            <li>Interventions are retrieved from 23 structured, versioned entries; the LLM only phrases them. Personal patterns are explainable statistics, not black-box ML.</li>
+            <li>Content encrypted at rest, audio deleted after transcription; a tap check-in costs zero LLM calls.</li>
+          </ul>
+          <ul class="tags"><li>FastAPI</li><li>Next.js 16</li><li>pgvector</li><li>Qwen3</li><li>Whisper</li><li>Docker</li></ul>
+        </article>
+
+        <!-- NutriChef -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__idx">07</span>
+            <span class="card__cat">Computer vision · Mobile</span>
+          </div>
+          <h3>NutriChef: AI meal planner</h3>
+          <p class="card__lede">
+            Full-stack recipe and nutrition app. Photograph a plate to identify the dish and estimate gram weights and macros,
+            cook from what's in your pantry, and get a weekly coaching review.
+          </p>
+          <ul class="points">
+            <li>Multi-provider AI fallback chain (Ollama, Gemini, OpenAI, Anthropic, Mistral and more); image requests are routed only to vision-capable models.</li>
+            <li>Non-LLM taste engine: time-decayed implicit-feedback profiles rank recipes for each user.</li>
+            <li>Expo React Native app on a Fastify + Prisma + PostgreSQL API, with rotating refresh-token auth and CI.</li>
+          </ul>
+          <ul class="tags"><li>TypeScript</li><li>React Native</li><li>Fastify</li><li>Prisma</li><li>PostgreSQL</li><li>Gemini</li><li>Ollama</li></ul>
+        </article>
+
+        <!-- Sentiment -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__idx">08</span>
+            <span class="card__cat">NLP · IBM project</span>
+          </div>
+          <h3>YouTube Comment Sentiment Analyzer</h3>
+          <p class="card__lede">
+            A Chrome extension that classifies the sentiment of every comment on a YouTube video and summarizes what viewers think.
+          </p>
+          <ol class="flow">
+            <li>Extension</li><li>DistilRoBERTa</li><li>&lt;90% conf?</li><li>Gemma 3</li><li>Summary</li>
+          </ol>
+          <ul class="points">
+            <li>Fine-tuned DistilRoBERTa on a YouTube comments dataset; low-confidence predictions escalate to Gemma 3, with graceful fallback.</li>
+            <li>FastAPI service in Docker; model also exported to GGUF for llama.cpp inference.</li>
+          </ul>
+          <ul class="tags"><li>PyTorch</li><li>Transformers</li><li>Gemma 3</li><li>FastAPI</li><li>Docker</li><li>Chrome MV3</li></ul>
+        </article>
+      </div>
+
+      <h3 class="more__title reveal">Earlier work</h3>
+      <ul class="more reveal">
+        <li>
+          <div>
+            <h4>Neural Machine Translator</h4>
+            <p>Seq2Seq with attention, trained on 900,000+ bilingual sentence pairs with data augmentation, giving a 30% accuracy gain over the baseline.</p>
+          </div>
+          <span>TensorFlow · Seq2Seq · Attention</span>
+        </li>
+        <li>
+          <div>
+            <h4>Mystic Minds</h4>
+            <p>A storytelling app that teaches moral values to children, generating age-appropriate stories with a fine-tuned Llama 3 model.</p>
+          </div>
+          <span>Llama 3 · Fine-tuning</span>
+        </li>
+        <li>
+          <div>
+            <h4>AI Traffic Safety System</h4>
+            <p>Hackathon build: an AI-based traffic safety system that placed in the Top 5.</p>
+          </div>
+          <span>Computer vision · Hackathon</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section wrap" id="skills">
+      <header class="section__head reveal">
+        <p class="kicker">03 · Skills</p>
+        <h2>Toolkit</h2>
+      </header>
+      <div class="skills reveal">
+        <div><h3>Languages</h3><p>Python · C++ · SQL · TypeScript</p></div>
+        <div><h3>ML &amp; Deep Learning</h3><p>PyTorch · TensorFlow · scikit-learn · XGBoost · SHAP</p></div>
+        <div><h3>NLP &amp; LLMs</h3><p>Transformers · spaCy · NLTK · Seq2Seq · Attention · RAG · FAISS · Fine-tuning</p></div>
+        <div><h3>Speech</h3><p>Whisper · VAD · Speaker verification · TTS · LiveKit</p></div>
+        <div><h3>Computer Vision</h3><p>OpenCV · YOLO · Tesseract OCR · Image processing · Vision LLMs</p></div>
+        <div><h3>Local inference</h3><p>Ollama · Apple MLX · llama.cpp / GGUF · ONNX Runtime</p></div>
+        <div><h3>APIs &amp; Backend</h3><p>FastAPI · PostgreSQL · pgvector · OpenAI · Gemini · REST</p></div>
+        <div><h3>Data &amp; Tools</h3><p>Pandas · NumPy · Docker · Git · Jupyter</p></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION + ACHIEVEMENTS -->
+    <section class="section wrap" id="education">
+      <header class="section__head reveal">
+        <p class="kicker">04 · Education</p>
+        <h2>Background</h2>
+      </header>
+      <div class="edu reveal">
+        <article class="edu__card">
+          <p class="edu__date">2022 — 2026</p>
+          <h3>B.Tech, Computer Science &amp; Engineering (AI &amp; ML)</h3>
+          <p>Kalasalingam Academy of Research and Education</p>
+          <p class="edu__score">CGPA 8.44 / 10</p>
+        </article>
+        <article class="edu__card">
+          <p class="edu__date">Achievements</p>
+          <ul class="points">
+            <li><strong>Hackathon winner:</strong> AI-based traffic safety system, Top 5 placement.</li>
+            <li>Mentored junior developers on ML model deployment and performance tuning.</li>
+            <li><strong>Kalasalingam × Purdue collaboration:</strong> co-built Vision Aid, an OCR and text-to-speech accessibility tool for visually impaired users, with students from both universities.</li>
+            <li>Capstone: FIR analysis &amp; crime pattern detection with NLP and LLMs.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section wrap contact reveal" id="contact">
+      <p class="kicker">05 · Contact</p>
+      <h2>Let's build something useful.</h2>
+      <p class="section__sub">I'm open to AI/ML engineering roles, collaborations and interesting problems in NLP, speech and applied LLMs.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:vikramballa184@gmail.com">vikramballa184@gmail.com</a>
+        <a class="btn btn--ghost" href="assets/Vikram_Balla_Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span id="year">2026</span> Balla Doondi Surya Vikram</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
